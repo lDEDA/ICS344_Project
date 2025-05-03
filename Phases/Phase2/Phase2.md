@@ -17,10 +17,10 @@ In this phase we download and setup Splunk to visualize the attacks that are bot
   <figcaption>Figure 8: Listing configured forward‑servers on Metasploitable3.</figcaption>
 </figure>
 
-3. **Verify Ingestion**: Run a simple search in the Splunk UI (e.g., `index=main sourcetype=syslog`) to confirm SSH authentication logs arrive.
+3. **Execute attack**: Run a few attacks and now that Splunk is integrated.
 
 <figure>
-  <img src="../../images/PHOTO-2025-05-03-18-07-21.jpeg" alt="Verify ingestion search results">
+  <img src="../../images/PHOTO-2025-05-03-14-52-12.jpeg.jpeg" alt="Verify ingestion search results">
   <figcaption>Figure 9: Splunk search confirming ingestion of SSH authentication logs.</figcaption>
 </figure>
 
