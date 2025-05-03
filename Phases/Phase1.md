@@ -11,12 +11,12 @@ This document details Phases 1 of the ICS344 course project into a single, step-
 1. **Attacker Machine**: Deploy Kali Linux with Metasploit Framework.
 
 <figure>
-  <img src="image1.png" alt="Kali Linux attacker VM">
+  <img src="../images/image1.png" alt="Kali Linux attacker VM">
   <figcaption>Figure 1: Kali Linux attacker setup.</figcaption>
 </figure>
 2. **Victim Machine**: Deploy Metasploitable3‑ub1404 as the vulnerable target.
 <figure>
-  <img src="image2.png" alt="Metasploitable3 victim VM">
+  <img src="../images/image2.png" alt="Metasploitable3 victim VM">
   <figcaption>Figure 2: Metasploitable3 vulnerable VM deployment.</figcaption>
 </figure>
 3. **Network Configuration**: Ensure both machines are bridged on the same network (e.g., 10.0.2.0/24).
@@ -30,7 +30,7 @@ This document details Phases 1 of the ICS344 course project into a single, step-
    ```
 
 <figure>
-  <img src="image3.jpeg" alt="Nmap scan showing FTP on port 21">
+  <img src="../images/image3.jpeg" alt="Nmap scan showing FTP on port 21">
   <figcaption>Figure 3: Nmap scan revealing FTP service on port 21.</figcaption>
 </figure>
 
@@ -46,7 +46,7 @@ This document details Phases 1 of the ICS344 course project into a single, step-
    ```
 
 <figure>
-  <img src="image4.jpeg" alt="Metasploit console with module and payload configured">
+  <img src="../images/image4.jpeg" alt="Metasploit console with module and payload configured">
   <figcaption>Figure 4: Metasploit console with RHOST, RPORT, LHOST, LPORT, module, and payload set.</figcaption>
 </figure>
 
@@ -57,7 +57,7 @@ This document details Phases 1 of the ICS344 course project into a single, step-
    ```
 
 <figure>
-  <img src="image5.jpeg" alt="Metasploit exploit run command output">
+  <img src="../images/image5.jpeg" alt="Metasploit exploit run command output">
   <figcaption>Figure 5: Running the exploit via `run` or `exploit` command.</figcaption>
 </figure>
 
@@ -71,11 +71,11 @@ This document details Phases 1 of the ICS344 course project into a single, step-
 2. **Script Execution**: Run the script from the Kali terminal to automatically exploit the vulnerability.
 
 <figure>
-  <img src="image6.jpeg" alt="Terminal running automated exploit script">
+  <img src="../images/image6.jpeg" alt="Terminal running automated exploit script">
   <figcaption>Figure 6: Executing the automated `.sh` script replicating manual exploit commands.</figcaption>
 </figure>
 3. **Script Content**: The Bash file contains `use`, `set`, and `run` commands in sequence.
 <figure>
-  <img src="image7.jpeg" alt="Content of automated exploit commands script">
+  <img src="../images/image7.jpeg" alt="Content of automated exploit commands script">
   <figcaption>Figure 7: Screenshot of the `.sh` file containing automated exploit commands.</figcaption>
 </figure>
