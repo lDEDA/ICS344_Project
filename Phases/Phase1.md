@@ -1,4 +1,4 @@
-# Detailed Project Steps for Network Compromise, Analysis, and Defense
+# Detailed Phase1 Steps for the course project
 
 This document details Phases 1 of the ICS344 course project into a single, step-by-step guide, integrating key screenshots and outputs from our steps.
 
