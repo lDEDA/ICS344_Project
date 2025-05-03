@@ -40,11 +40,11 @@
 2. We reviewed sample events for each classification:
 
    <figure>
-     <img src="../images/PHOTO-2025-05-03-14-54-00.jpeg" alt="Accepted password events">
+     <img src="../images/PHOTO-2025-05-03-14-54-00.jpeg" alt="Accepted password events" style="width:100%;">
      <figcaption>Figure 10: Example of “Accepted password” events.</figcaption>
    </figure>
    <figure>
-     <img src="../images/PHOTO-2025-05-03-14-54-17.jpeg" alt="Failed password events">
+     <img src="../images/PHOTO-2025-05-03-14-54-17.jpeg" alt="Failed password events" style="width:100%;">
      <figcaption>Figure 11: Example of “Failed password” events.</figcaption>
    </figure>
 3. Finally, we visualized the overall counts as a bar chart:
