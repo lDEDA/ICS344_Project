@@ -20,8 +20,8 @@ In this phase we download and setup Splunk to visualize the attacks that are bot
 3. **Execute attack**: Run a few attacks and now that Splunk is integrated.
 
 <figure>
-  <img src="../../images/PHOTO-2025-05-03-14-52-12.jpeg.jpeg" alt="Verify ingestion search results">
-  <figcaption>Figure 9: Splunk search confirming ingestion of SSH authentication logs.</figcaption>
+  <img src="../../images/PHOTO-2025-05-03-14-52-12.jpeg" alt="Verify ingestion search results">
+  <figcaption>Figure 9: Running the attack from Kali to Metasploitable3.</figcaption>
 </figure>
 
 ### 2.2. Search, Statistics & Visualization
