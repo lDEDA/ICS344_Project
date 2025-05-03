@@ -1,6 +1,6 @@
 ## 2. SIEM Dashboard Analysis (Phase 2)
 
-In this step we download and setup Splunk to visualize the attacks that are both failed and accepted.
+In this phase we download and setup Splunk to visualize the attacks that are both failed and accepted. The tools used here are Kali linux, Metasploitable3, Splunk.
 ### 2.1. Splunk UI Initialization & Forwarder Configuration
 
 1. **Access Splunk Enterprise UI**: Launch a browser to `http://<Splunk_server>:8000`, log in with your credentials, and arrive at the Splunk Enterprise home screen.
