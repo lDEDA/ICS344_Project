@@ -24,13 +24,13 @@ In Phase 3, we implemented a defensive strategy to mitigate the ProFTPD `mod_cop
 1. **Disable ProFTPD Service**
 
    <figure>
-     <img src="../images/PHOTO-2025-05-03-19-39-22.jpg" alt="Disabling ProFTPD service" width="100%">
+     <img src="../../images/PHOTO-2025-05-03-19-39-22.jpg" alt="Disabling ProFTPD service" width="100%">
      <figcaption>Figure 14: Disabling ProFTPD to remove the vulnerable service.</figcaption>
    </figure>
 2. **Block FTP Port 21**
 
    <figure>
-     <img src="../images/PHOTO-2025-05-03-19-39-22 2.jpg" alt="Blocking FTP port with UFW" width="100%">
+     <img src="../../images/PHOTO-2025-05-03-19-39-22 2.jpg" alt="Blocking FTP port with UFW" width="100%">
      <figcaption>Figure 15: Configuring UFW to deny incoming traffic on port 21.</figcaption>
    </figure>
 
@@ -39,13 +39,13 @@ In Phase 3, we implemented a defensive strategy to mitigate the ProFTPD `mod_cop
 1. **Re-Attempt Exploit**
 
    <figure>
-     <img src="../images/PHOTO-2025-05-03-19-39-23.jpg" alt="Metasploit exploit attempt after defense" width="100%">
+     <img src="../../images/PHOTO-2025-05-03-19-39-23.jpg" alt="Metasploit exploit attempt after defense" width="100%">
      <figcaption>Figure 16: Post-defense exploit attempt showing connection refused.</figcaption>
    </figure>
 2. **Network Scan**
 
    <figure>
-     <img src="../images/PHOTO-2025-05-03-19-39-23 2.jpg" alt="Nmap port 21 closed after defense" width="100%">
+     <img src="../../images/PHOTO-2025-05-03-19-39-23 2.jpg" alt="Nmap port 21 closed after defense" width="100%">
      <figcaption>Figure 17: Nmap scan showing port 21 closed following defense.</figcaption>
    </figure>
 
@@ -54,13 +54,13 @@ In Phase 3, we implemented a defensive strategy to mitigate the ProFTPD `mod_cop
 * **Before Defense**
 
   <figure>
-    <img src="../images/PHOTO-2025-05-03-19-39-24.jpg" alt="Before defense state" width="100%">
+    <img src="../../images/PHOTO-2025-05-03-19-39-24.jpg" alt="Before defense state" width="100%">
     <figcaption>Figure 18: Before defense — ProFTPD running, port 21 open, exploit successful.</figcaption>
   </figure>
 * **After Defense**
 
   <figure>
-    <img src="../images/PHOTO-2025-05-03-19-39-24 2.jpg" alt="After defense state" width="100%">
+    <img src="../../images/PHOTO-2025-05-03-19-39-24 2.jpg" alt="After defense state" width="100%">
     <figcaption>Figure 19: After defense — ProFTPD stopped, port 21 closed, exploit failed.</figcaption>
   </figure>
 
