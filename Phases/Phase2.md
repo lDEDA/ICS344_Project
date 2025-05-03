@@ -23,7 +23,7 @@
   <figcaption>Figure 9: Splunk search confirming ingestion of SSH authentication logs.</figcaption>
 </figure>
 
-### 2.2. Search, Statistics & Visualization### 2.2. Search, Statistics & Visualization
+### 2.2. Search, Statistics & Visualization
 
 1. We executed a core Splunk search to classify each event as “Accepted” or “Failed”:
 
@@ -43,6 +43,7 @@
      <img src="../images/PHOTO-2025-05-03-14-54-00.jpeg" alt="Accepted password events">
      <figcaption>Figure 10: Example of “Accepted password” events.</figcaption>
    </figure>
+   
    <figure>
      <img src="../images/PHOTO-2025-05-03-14-54-17.jpeg" alt="Failed password events">
      <figcaption>Figure 11: Example of “Failed password” events.</figcaption>
