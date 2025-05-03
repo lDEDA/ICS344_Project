@@ -15,7 +15,7 @@ When it comes to work distribution we divided the project among us according to 
 * **Phase 1: Setup & Initial Compromise** — Hussain Al-Abdullah (202180710)
 * **Phase 2: SIEM Dashboard Analysis** — Mohammed Al-Refaei (202012640), Hussain Al-Abdullah (202180710)
 * **Phase 3: Defensive Strategy & Validation** — Osama Al-Bassam (202161270)
-* ** Github Documentation and slides: Mohammed Al-Refaei (202012640)
+* **Github Documentation and slides** - Mohammed Al-Refaei (202012640)
 
 ## Issues Faced
 
