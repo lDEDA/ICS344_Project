@@ -55,12 +55,11 @@ In this step we download and setup Splunk to visualize the attacks that are both
      <figcaption>Figure 12: Column chart of authentication outcomes.</figcaption>
    </figure>
 
-## ### 2.3. Key Observations & Conclusion of Phase 2
+## 2.3. Key Observations & Conclusion of Phase 2
 
 **Key Observations:**
 
 * **High Success Rate:** Of the 5 total SSH authentication attempts captured, 3 were successful logins while 2 failed, indicating significant unauthorized login activity yet a persistent attacker success rate.
-* **Pattern of Attempts:** Failed attempts often originated shortly before successful ones, suggesting the attacker iterated through credentials until compromise.
 * **Timely Ingestion:** Universal Forwarder configuration and ingestion validation proved reliable, with near real-time log delivery into Splunk.
 * **Search Efficiency:** The single SPL query effectively classified and counted outcomes, demonstrating Splunk’s ability to rapidly process syslog data.
 
