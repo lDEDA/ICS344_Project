@@ -11,7 +11,7 @@ Group 5
 * **Mohammed Al-Refaei** — 202012640
 
 ## Work Distribution
-in terms of work distribution we divided the project among us according to phases as the following:
+When it comes to work distribution we divided the project among us according to phases as the following:
 * **Phase 1: Setup & Initial Compromise** — Hussain Al-Abdullah (202180710)
 * **Phase 2: SIEM Dashboard Analysis** — Mohammed Al-Refaei (202012640) 
 * **Phase 3: Defensive Strategy & Validation** — Osama Al-Bassam (202161270)
